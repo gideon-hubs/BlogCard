@@ -1,34 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import './style.css'
+import Container  from './Container';
 
-function App() {
-  return (
-    <body>
-  <div class="message">You are not authorized.
-  </div>
-  <div class="message2">You tried to access a page you did not have prior authorization for.</div>
-  <div class="container">
-    <div class="neon">403</div>
-    <div class="door-frame">
-      <div class="door">
-        <div class="rectangle">
-      </div>
-        <div class="handle">
-          </div>
-        <div class="window">
-          <div class="eye">
-          </div>
-          <div class="eye eye2">
-          </div>
-          <div class="leaf">
-          </div> 
-        </div>
-      </div>  
-    </div>
-  </div>
-</body>
-  );
+
+
+// function App() {
+
+//   let name = 'mario'
+
+
+//   const handleClick = () => {
+//     name = 'luigi';
+//     console.log(name)
+//   }
+
+
+//   return(
+//     <div className='App'>
+//     <h1>My name is {name}</h1>
+//     <button onClick={handleClick}>Change name</button>
+//     </div>
+//   );
+// }
+// export default App;
+
+
+class App extends React.Component {
+  render(){
+    return (
+     <Container name = "psidigitals"/>
+    )
+  }
+
 }
-
 export default App;
